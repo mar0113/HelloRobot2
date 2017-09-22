@@ -44,7 +44,7 @@ p = Piggy()
 
 def menu():
     while True:
-        i = raw_input("Press 1 for cruise \n Press 2 for pulse \n Press 3 for sweep")
+        i = raw_input("Press 1 for cruise \nPress 2 for pulse \nPress 3 for sweep\n")
         if "1" in i:
             p.cruise()
         elif "2" in i:
