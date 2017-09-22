@@ -4,7 +4,7 @@ import time
 
 class Piggy(object):
 
-    def __init__(selfself):
+    def __init__(self):
         print("I AM ALIVE")
 
     def pulse(self):
@@ -37,18 +37,19 @@ class Piggy(object):
             time.sleep(.5)
             stop()
 
+
 # MY APP
 p = Piggy()
 
 
 def menu():
     while True:
-        input = raw_input("Press 1 for cruise \n Press 2 for pulse \n Press 3 for sweep")
-        if "1" in input:
+        i = raw_input("Press 1 for cruise \n Press 2 for pulse \n Press 3 for sweep")
+        if "1" in i:
             p.cruise()
-        elif "2" in input:
+        elif "2" in i:
             p.pulse()
-        elif "3" in input:
+        elif "3" in i:
             p.servo_sweep()
 
 
