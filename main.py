@@ -37,8 +37,8 @@ class Piggy(object):
             time.sleep(.5)
             stop()
 
-
-p = Piggy
+# MY APP
+p = Piggy()
 
 
 def menu():
@@ -55,7 +55,6 @@ def menu():
 
 try:
     menu()
-except Exception as ee:
-    print(ee)
+except(KeyboardInterrupt, SystemExit):
     from gopigo import *
     stop()
